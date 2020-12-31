@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 a = 'hello'
 b = 25
 print(a)
