@@ -12,7 +12,7 @@ class Hero():
 
     def show_hero(self):
         """Print all parameters of this Hero"""
-        discription = (self.name, 'Level is:', str(self.level), 'Race is:', self.race, 'Health is:',
+        discription = (self.name, 'Level is: ' + str(self.level), 'Race is: ' + self.race, 'Health is: ',
                        str(self.health))
         print(discription)
 
@@ -28,6 +28,7 @@ class Hero():
 myhero1 = Hero('Vuradlak', 5, 'Orc')
 myhero2 = Hero('Alexander', 4, 'Human')
 
-myhero1.show_hero
-myhero2.move
-myhero1.level_up
+myhero1.show_hero()
+myhero2.show_hero()
+myhero2.move()
+myhero1.level_up()
