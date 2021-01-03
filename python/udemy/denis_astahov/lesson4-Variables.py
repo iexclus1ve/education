@@ -9,7 +9,7 @@ age = 25
 print(f_name, l_name, age)
 full_name = (f_name, l_name, age)
 print(full_name)
-print(type (full_name))
+print(type(full_name))
 c = str(full_name)
 print(c)
 print(type(c))

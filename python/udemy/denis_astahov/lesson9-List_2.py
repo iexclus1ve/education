@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#index    0     1       2       3       4
+# index    0     1       2       3       4
 cars = ['bmw', 'vw', 'seat', 'skoda', 'lada']
 
 for car in cars:
@@ -13,7 +13,7 @@ for x in mynumber_list:
     x *= 2
     print(x)
 
-mynumber_list.sort(reverse = True)
+mynumber_list.sort(reverse=True)
 print(mynumber_list)
 
 print(max(mynumber_list))

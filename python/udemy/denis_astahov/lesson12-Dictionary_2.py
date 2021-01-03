@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 enemy = {
-        'loc_x': 70,
-        'loc_y': 50,
-        'color': 'green',
-        'health': 100,
-        'name': 'Mudilo',
-        'image': ['image1.jpg', 'image2.jpg', 'image3.jpg']
+    'loc_x': 70,
+    'loc_y': 50,
+    'color': 'green',
+    'health': 100,
+    'name': 'Mudilo',
+    'image': ['image1.jpg', 'image2.jpg', 'image3.jpg']
 }
 
 all_enemies = []

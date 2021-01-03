@@ -2,10 +2,10 @@
 def create_record(name, phone, address):
     '''Create Records'''
     record = {
-            'name': name,
-            'phone': phone,
-            'address': address,
-            }
+        'name': name,
+        'phone': phone,
+        'address': address,
+    }
     return record
 
 

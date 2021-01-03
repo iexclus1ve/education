@@ -31,7 +31,7 @@ print('Deleted city is ' + deleted_city)
 cities.sort()
 print(cities)
 
-cities.sort(reverse = True)
+cities.sort(reverse=True)
 print(cities)
 
 cities.reverse()

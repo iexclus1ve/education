@@ -10,11 +10,11 @@ print('Messages:\n\tMessage 1\n\tMessage 2\n\tMessage 3\nEND')
 print('Lower name: ' + name.lower())
 a = (' ..... ,-}dadya vasya ..... ')
 print(a)
-print(a.rstrip())  #Убирает пробелы справа
-print(a.lstrip())  #Убирает пробелы слева
-print(a.strip())  #Убирает пробелы слева и справа
+print(a.rstrip())  # Убирает пробелы справа
+print(a.lstrip())  # Убирает пробелы слева
+print(a.strip())  # Убирает пробелы слева и справа
 print('\n<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>\n')
-print(a.strip('.  ,-}'))  #Убирает точки и пробелы слева и справа
+print(a.strip('.  ,-}'))  # Убирает точки и пробелы слева и справа
 print('\n<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>\n')
 a = ('..... dadya vasya .....')
 a = a.strip('.')
