@@ -8,3 +8,13 @@ elif guess > secret:
     print('too high')
 else:
     print('just right')
+
+small = True
+green = False
+
+if small:
+    print('горошек', 'вишня')
+    if green:
+        print('горошек', 'арбуз')
+    else:
+        print('тыква')
