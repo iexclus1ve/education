@@ -9,12 +9,12 @@ elif guess > secret:
 else:
     print('just right')
 
-small = True
+small = False
 green = False
 
 if small:
     print('горошек', 'вишня')
-    if green:
-        print('горошек', 'арбуз')
-    else:
-        print('тыква')
+elif green:
+    print('горошек', 'арбуз')
+else:
+    print('тыква')
