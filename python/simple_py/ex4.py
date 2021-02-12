@@ -12,33 +12,29 @@ for word in poem_list:
         poem = ' '.join(poem_list)
         print(poem)
 
-questions = [
-"We don't serve strings around here. Are you a string?",
-"What is said on Father's Day in the forest?",
-"What makes the sound 'Sis! Boom! Bah!'?"
-]
+questions = ["We don't serve strings around here. Are you a string?",
+             "What is said on Father's Day in the forest?",
+             "What makes the sound 'Sis! Boom! Bah!'?"]
 
-answers = [
-"An exploding sheep.",
-"No, I'm a frayed knot.",
-"'Pop!' goes the weasel."
-]
+answers = ["An exploding sheep.",
+           "No, I'm a frayed knot.",
+           "'Pop!' goes the weasel."]
 
 print(questions[0], answers[1])
 print(questions[1], answers[2])
 print(questions[2], answers[0])
 
-eat1 = 'roast beef'
+eat1 = 'beef'
 eat2 = 'ham'
 var1 = 'head'
 var2 = 'clam'
 
-vars_dict = {'var1': 'head', 'var2': 'clam', 'eat1': 'ham', 'eat2': 'roastbeef'}
+vars_dict = {'var1': 'head', 'var2': 'clam', 'eat1': 'ham', 'eat2': 'beef'}
 
 poem2 = "\nMy kitty cat likes %s,\n\
 My kitty cat likes %s,\n\
 My kitty cat fell on his %s\n\
-And now thinks he's a %s." %(eat1, eat2, var1, var2)
+And now thinks he's a %s." % (eat1, eat2, var1, var2)
 
 print(poem2)
 
