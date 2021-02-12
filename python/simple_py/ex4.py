@@ -28,7 +28,6 @@ print(questions[0], answers[1])
 print(questions[1], answers[2])
 print(questions[2], answers[0])
 
-
 eat1 = 'roast beef'
 eat2 = 'ham'
 var1 = 'head'
