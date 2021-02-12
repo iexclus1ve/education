@@ -2,7 +2,7 @@ poem = '''When an eel grabs your arm,
 And it causes great harm,
 That's - a moray!'''
 
-poem_list = (poem.split(' '))
+poem_list = poem.split(' ')
 
 for word in poem_list:
     if word.startswith('m'):
