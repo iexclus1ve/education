@@ -2,4 +2,3 @@
 marxes = ['Groucho', 'Chico', 'Harpo']
 print(marxes)
 marxes.insert(2, 'Gummo')
-print(marxes)
