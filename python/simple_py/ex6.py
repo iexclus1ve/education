@@ -1,4 +1,14 @@
 #! /usr/bin/env python3
 marxes = ['Groucho', 'Chico', 'Harpo']
 print(marxes)
-marxes.insert(2, 'Gummo')
+
+for marx in marxes:
+    print(marx)
+
+# marxes.insert(2, 'Gummo')
+print(marxes)
+print(marxes.index('Groucho'))
+
+others = ['Gummo', 'Karl']
+marxes.extend(others)
+print(marxes)
