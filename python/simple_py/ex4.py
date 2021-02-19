@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# STRING
 poem = '''When an eel grabs your arm,
 And it causes great harm,
 That's - a moray!'''

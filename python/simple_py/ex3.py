@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+# IF, ELIF, ELSE
 secret = 8
 guess = 8
 
