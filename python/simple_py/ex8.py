@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 # DICTIONARY
+import copy
 empty_dict = {}
 print(empty_dict)
 
@@ -88,3 +89,43 @@ print(signals.values())
 print(list(signals.values()))
 print(list(signals.items()))
 print(len(signals))
+
+first = {'a': 'aginy', 'b': 'bliss'}
+second = {'b': 'bagels', 'c': 'candy'}
+third = {'d': 'donats'}
+x = {**first, **second, **third}
+print(x)
+
+others = {'Marx': 'Groucho', 'Howard': 'Moe'}
+pythons.update(others)
+print(pythons)
+del pythons['Marx']
+print(pythons)
+del pythons['Howard']
+print(pythons)
+
+original_signals = signals.copy()
+signals['blue'] = 'confuse everyone'
+print(signals)
+print(original_signals)
+
+signals = {
+    'green': 'go',
+    'yellow': 'go faster',
+    'red': ['stop', 'smile']
+}
+signals_copy = signals.copy()
+print(signals)
+print(signals_copy)
+signals['red'][1] = 'sweat'
+print(signals)
+print(signals_copy)
+
+signals = {
+    'green': 'go',
+    'yellow': 'go faster',
+    'red': ['stop', 'smile']
+}
+signal_copy = copy.deepcopy(signals)
+print(signals)
+print(signals_copy)
