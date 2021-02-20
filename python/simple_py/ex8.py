@@ -126,6 +126,28 @@ signals = {
     'yellow': 'go faster',
     'red': ['stop', 'smile']
 }
-signal_copy = copy.deepcopy(signals)
+signals_copy = copy.deepcopy(signals)
 print(signals)
 print(signals_copy)
+signals['red'][1] = 'sweat'
+print(signals)
+print(signals_copy)
+
+a = {1:1, 2:2, 3:3}
+b = {1:1, 2:2, 3:3}
+print(a == b)
+a = {1: [1, 2], 2: [1], 3: [1]}
+a = {1: [1, 3], 2: [1], 3: [1]}
+print(a == b)
+
+accusation = {
+        'room': 'ballroom',
+        'weapon': 'lead pipe',
+        'person': 'Col. Mustard'
+        }
+for card in accusation.keys():
+    print(card)
+for value in accusation.values():
+    print(value)
+for item in accusation.items():
+    print(item)
