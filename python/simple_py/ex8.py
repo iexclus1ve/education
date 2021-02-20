@@ -151,3 +151,9 @@ for value in accusation.values():
     print(value)
 for item in accusation.items():
     print(item)
+for card, content in accusation.items():
+    print('Card', card, 'has the contents', content)
+
+word = 'letters'
+letters_count = {letter: word.count(letter) for letter in word}
+print(letters_count)
