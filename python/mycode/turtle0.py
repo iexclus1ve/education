@@ -11,6 +11,5 @@ for step in range(6):
     turtle.end_fill()
     turtle.forward(50)
     turtle.left(360 / 6)
-
 turtle.hideturtle()
 turtle.mainloop()
