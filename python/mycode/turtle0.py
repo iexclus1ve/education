@@ -2,7 +2,7 @@ import turtle
 turtle.shape('turtle')
 turtle.pensize(3)
 turtle.color('purple', 'green')
-#turtle.speed(20)
+# turtle.speed(20)
 
 
 def david():
