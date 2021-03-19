@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import turtle
 import math
 turtle.shape('turtle')
@@ -11,6 +12,9 @@ l = (2 * r) * math.sin(108 * math.pi / 180)
 
 
 def david():
+    turtle.penup()
+    turtle.goto(-18, -18)
+    turtle.pendown()
     for step in range(6):
         turtle.begin_fill()
         for i in range(3):
@@ -40,10 +44,10 @@ def circle():
     turtle.pendown()
     turtle.circle(r)
     turtle.penup()
-    # turtle.home()
-    # turtle.goto(0, r)
     turtle.pendown()
     turtle.end_fill()
+
+
 circle()
 star()
 turtle.penup()
