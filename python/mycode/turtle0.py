@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 import turtle
 import math
-turtle.shape('turtle')
+turtle.shape('triangle')
 turtle.pensize(3)
 turtle.color('red', 'black')
 turtle.speed(3)
