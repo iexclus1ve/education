@@ -1,40 +1,39 @@
 #! /usr/bin/env python3
 import turtle
 import math
+
 turtle.shape('triangle')
 turtle.pensize(3)
 turtle.color('red', 'black')
+
 turtle.speed(3)
-c = 240
-r = c / 2 * math.pi
-d = r * 2
-l = (2 * r) * math.sin(108 * math.pi / 180)
+c = 240  # Длина окружности
+r = c / 2 * math.pi  # Радиус окружности
+d = r * 2  # Диаметр окружности
+l = (2 * r) * math.sin(108 * math.pi / 180)  # Длина хорды
+corner = (360 / 5)  # Угол пятиконечной звезды
+david_len = 36  # Длина стороны треугольника звезды Давида
 
 
 def david():
     turtle.penup()
-    turtle.goto(-18, -18)
+    turtle.home()
+    turtle.goto(-david_len / 2, -david_len / 2)
     turtle.pendown()
     for step in range(6):
-        turtle.begin_fill()
         for i in range(3):
-            turtle.forward(36)
+            turtle.forward(david_len)
             turtle.right(360 / 3)
-        turtle.end_fill()
         turtle.forward(36)
         turtle.left(360 / 6)
 
 
 def star():
-    turtle.penup()
-    turtle.pendown()
-    # turtle.begin_fill()
-    turtle.left(108)
+    turtle.left(corner)
     turtle.forward(l)
     for i in range(4):
-        turtle.right(144)
+        turtle.left(corner * 2)
         turtle.forward(l)
-    # turtle.end_fill()
 
 
 def circle():
@@ -50,9 +49,6 @@ def circle():
 
 circle()
 star()
-turtle.penup()
-turtle.home()
-turtle.pendown()
 david()
 turtle.hideturtle()
 turtle.mainloop()
