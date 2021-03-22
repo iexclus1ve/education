@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+}
+
+.blog {
+    margin: auto;
+    width: 600px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightslategrey;
+    padding: 10px;
+}
+
+.text {
+    text-align: justify;
+    margin: 0px;
+}
