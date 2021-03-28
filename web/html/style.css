@@ -1,31 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
 }
 p {
-    text-indent: 20px
+  text-indent: 20px;
 }
 .title {
-    font-family: Tahoma, sans-serif;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 3px;
-    text-decoration: overline;
-    text-transform: uppercase;
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-decoration: overline;
+  text-transform: uppercase;
 }
 .justify {
-    text-align: justify;
-    font-weight: bold;
-    font-style: italic;
+  text-align: justify;
+  font-weight: bold;
+  font-style: italic;
 }
 ul {
-    list-style-type: square;
-    list-style-position: inside;
-    color:#114eaf;
-    font-family: sans-serif;
+  list-style-type: square;
+  list-style-position: inside;
+  color: #114eaf;
+  font-family: sans-serif;
 }
 ol {
-    list-style-type: decimal-leading-zero;
+  list-style-type: decimal-leading-zero;
 }
