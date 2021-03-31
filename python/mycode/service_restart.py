@@ -16,13 +16,18 @@ serviceStart = f'{promt} {control} {actionStart} {serviceName}'
 serviceStop = f'{promt} {control} {actionStop} {serviceName}'
 
 host = input('Enter IP address or hostname: ')
-port = int(input('Enter port number (default 22): '))
+port = int(input('Enter port number: '))
 
 username = input('Enter username: ')
 password = getpass.getpass('Enter password: ')
 
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-client.connect(host, port, username, password)
+
+client.connect(host,
+               port,
+               username,
+               password)
+
 client.get_transport()
 print('Connection Success!')
 
@@ -33,7 +38,7 @@ try:
 except ValueError:
     print('Enter a correct value')
 
-while commandAction:
+while True:
     if commandAction == 1:
         command = serviceStart
         print(f'Service {serviceName.upper()} will be starting')
