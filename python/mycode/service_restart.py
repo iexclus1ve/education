@@ -30,13 +30,6 @@ client.get_transport()
 
 print('Connection Success!')
 
-commandAction = input('Enter 1 for START service or 0 for STOP service: ')
-
-try:
-    commandAction = int(commandAction)
-except ValueError:
-    print('Enter a correct value')
-
 while True:
 
     commandAction = input('Enter 1 for START service or 0 for STOP service: ')
