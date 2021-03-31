@@ -26,34 +26,37 @@ client.connect(host, port, username, password)
 client.get_transport()
 print('Connection Success!')
 
+commandAction = input('Enter 1 for START service or 0 for STOP service: ')
 
-commandAction = int(input('Enter 1 for START service or 0 for STOP service: '))
+try:
+    commandAction = int(commandAction)
+except ValueError:
+    print('Enter a correct value')
 
-while True:
+while commandAction:
     if commandAction == 1:
         command = serviceStart
         print(f'Service {serviceName.upper()} will be starting')
-        break
+
     elif commandAction == 0:
         command = serviceStop
         print(f'Service {serviceName.upper()} will be stopping')
+    elif commandAction != 0 or commandAction != 1:
+        print('WTF?! Please enter 0 or 1')
         break
+
+    stdin, stdout, stderr = client.exec_command(command=command, get_pty=True)
+    print("command sent!")
+    stdin.write(password + '\n')
+    print("Password sent!")
+    stdin.flush()
+    print("Input flushed!")
+
+    if stderr.channel.recv_exit_status() != 0:
+        print("Error occured!")
+        print(f"The following error occured: {stderr.readlines()}")
     else:
-        print('Enter a correct value')
+        print("Getting output!")
+    #   print(f"The following output was produced: \n{stdout.readlines()}")
 
-
-stdin, stdout, stderr = client.exec_command(command=command, get_pty=True)
-print("command sent!")
-stdin.write(password + '\n')
-print("Password sent!")
-stdin.flush()
-print("Input flushed!")
-
-if stderr.channel.recv_exit_status() != 0:
-    print("Error occured!")
-    print(f"The following error occured: {stderr.readlines()}")
-else:
-    print("Getting output!")
-#   print(f"The following output was produced: \n{stdout.readlines()}")
-
-client.close()
+    client.close()
