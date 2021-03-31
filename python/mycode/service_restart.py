@@ -38,6 +38,13 @@ except ValueError:
     print('Enter a correct value')
 
 while True:
+
+    commandAction = input('Enter 1 for START service or 0 for STOP service: ')
+
+    try:
+        commandAction = int(commandAction)
+    except ValueError:
+        print('Enter a correct value')
     if commandAction == 1:
         command = serviceStart
         print(f'Service {serviceName.upper()} will be starting')
@@ -48,7 +55,6 @@ while True:
         break
     else:
         print('WTF?! Please enter 0 or 1')
-        break
 
 try:
     stdin, stdout, stderr = client.exec_command(command=command, get_pty=True)
