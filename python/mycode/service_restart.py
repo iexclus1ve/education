@@ -12,8 +12,8 @@ actionStop = 'stop'
 promt = 'sudo'
 
 
-commandStart = f'{promt} {control} {actionStart} {serviceName}'
-commandStop = f'{promt} {control} {actionStop} {serviceName}'
+serviceStart = f'{promt} {control} {actionStart} {serviceName}'
+serviceStop = f'{promt} {control} {actionStop} {serviceName}'
 
 host = input('Enter IP address or hostname: ')
 port = int(input('Enter port number (default 22): '))
@@ -27,15 +27,17 @@ client.get_transport()
 print('Connection Success!')
 
 
-command = int(input('Enter 1 for START service or 0 for STOP service: '))
+commandAction = int(input('Enter 1 for START service or 0 for STOP service: '))
 
-for i in range(3):
-    if command == 1:
-        command = commandStart
-        print('Service will be start')
-    elif command == 0:
-        command = commandStop
-        print('Service will be stop')
+while True:
+    if commandAction == 1:
+        command = serviceStart
+        print(f'Service {serviceName.upper()} will be starting')
+        break
+    elif commandAction == 0:
+        command = serviceStop
+        print(f'Service {serviceName.upper()} will be stopping')
+        break
     else:
         print('Enter a correct value')
 
@@ -52,6 +54,6 @@ if stderr.channel.recv_exit_status() != 0:
     print(f"The following error occured: {stderr.readlines()}")
 else:
     print("Getting output!")
-    print(f"The following output was produced: \n{stdout.readlines()}")
+#   print(f"The following output was produced: \n{stdout.readlines()}")
 
 client.close()
