@@ -6,20 +6,18 @@ import getpass
 client = paramiko.SSHClient()
 
 control = 'systemctl'
-serviceName = 'openvpn@server'
 actionStart = 'start'
 actionStop = 'stop'
 promt = 'sudo'
 
+host = input('Enter IP address or hostname: ')
+port = int(input('Enter port number: '))
+username = input('Enter username: ')
+password = getpass.getpass('Enter password: ')
+serviceName = input('Enter a service e. g. "nginx": ')
 
 serviceStart = f'{promt} {control} {actionStart} {serviceName}'
 serviceStop = f'{promt} {control} {actionStop} {serviceName}'
-
-host = input('Enter IP address or hostname: ')
-port = int(input('Enter port number: '))
-
-username = input('Enter username: ')
-password = getpass.getpass('Enter password: ')
 
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
@@ -29,6 +27,7 @@ client.connect(host,
                password)
 
 client.get_transport()
+
 print('Connection Success!')
 
 commandAction = input('Enter 1 for START service or 0 for STOP service: ')
@@ -42,26 +41,31 @@ while True:
     if commandAction == 1:
         command = serviceStart
         print(f'Service {serviceName.upper()} will be starting')
-
+        break
     elif commandAction == 0:
         command = serviceStop
         print(f'Service {serviceName.upper()} will be stopping')
-    elif commandAction != 0 or commandAction != 1:
+        break
+    else:
         print('WTF?! Please enter 0 or 1')
         break
 
+try:
     stdin, stdout, stderr = client.exec_command(command=command, get_pty=True)
-    print("command sent!")
+    print('Command sent')
     stdin.write(password + '\n')
-    print("Password sent!")
+    print('Password sent')
     stdin.flush()
-    print("Input flushed!")
+    print('Input flushed')
 
     if stderr.channel.recv_exit_status() != 0:
-        print("Error occured!")
-        print(f"The following error occured: {stderr.readlines()}")
+        print('Error occured!')
+        print(f'The following error occured: {stderr.readlines()}')
     else:
-        print("Getting output!")
+        print('Getting output!')
     #   print(f"The following output was produced: \n{stdout.readlines()}")
 
     client.close()
+    print('Have a nice day.')
+except Exception:
+    print('Unknown command')
