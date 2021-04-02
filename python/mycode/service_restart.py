@@ -28,7 +28,7 @@ while True:
         print('Connection Success!')
         break
     except Exception:
-        print('Can`t connext to the host')
+        print('Can`t conneсt to the host')
 
 while True:
 
