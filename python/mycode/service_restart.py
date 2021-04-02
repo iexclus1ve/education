@@ -9,6 +9,7 @@ control = 'systemctl'
 actionStart = 'start'
 actionStop = 'stop'
 promt = 'sudo'
+timer = 15
 
 host = input('Enter IP address or hostname: ')
 port = int(input('Enter port number: '))
@@ -24,7 +25,7 @@ client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 client.connect(host,
                port,
                username,
-               password)
+               password, timeout=timer)
 
 client.get_transport()
 
