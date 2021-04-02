@@ -20,16 +20,15 @@ serviceName = input('Enter a service e. g. "nginx": ')
 serviceStart = f'{promt} {control} {actionStart} {serviceName}'
 serviceStop = f'{promt} {control} {actionStop} {serviceName}'
 
-client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
-client.connect(host,
-               port,
-               username,
-               password, timeout=timer)
-
-client.get_transport()
-
-print('Connection Success!')
+while True:
+    try:
+        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        client.connect(host, port, username, password, timeout=timer)
+        client.get_transport()
+        print('Connection Success!')
+        break
+    except Exception:
+        print('Can`t connext to the host')
 
 while True:
 
