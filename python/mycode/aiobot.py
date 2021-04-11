@@ -22,8 +22,10 @@ async def cmd_test1(message: types.Message):
         await message.answer('Hello my Master')
 
         buttons = [
-            types.InlineKeyboardButton(text="Stop Nextcloud", callback_data='Action 1'),
-            types.InlineKeyboardButton(text="Start Nextcloud", callback_data='Action 2')
+            types.InlineKeyboardButton(
+                text="Stop Nextcloud", callback_data='Action 1'),
+            types.InlineKeyboardButton(
+                text="Start Nextcloud", callback_data='Action 2')
         ]
 
         keyboard = types.InlineKeyboardMarkup()
