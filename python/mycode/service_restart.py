@@ -62,7 +62,7 @@ try:
         print(f'The following error occured: {stderr.readlines()}')
     else:
         print('Getting output!')
-    #   print(f"The following output was produced: \n{stdout.readlines()}")
+        print(f"The following output was produced: \n{stdout.readlines()}")
 
     client.close()
     print('Have a nice day.')
