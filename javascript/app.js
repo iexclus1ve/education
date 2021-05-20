@@ -1,5 +1,5 @@
 let f_name = "Denis";
 console.log(f_name);
 
-var name = "Den";
-console.log(name);
+f_name = "Den";
+console.log(f_name);
