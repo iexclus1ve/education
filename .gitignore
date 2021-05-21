@@ -1,3 +1,5 @@
 .vscode
 python/venv
 venv/
+python/production
+python/.idea
