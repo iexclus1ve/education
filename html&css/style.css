@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+p {
+  text-indent: 20px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: overline;
+  text-transform: uppercase;
+}
+
+.justify {
+  text-align: justify;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  color: rgb(8, 2, 65);
+  font-family: Helventica;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+  text-transform: lowercase;
+}
+
