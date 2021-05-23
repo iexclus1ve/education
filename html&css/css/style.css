@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+  background: url("../img/bg2.png") center;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: overline;
+  text-transform: uppercase;
+}
+
+.justify {
+  text-align: justify;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  color: rgb(8, 2, 65);
+  font-family: Helventica;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+  text-transform: lowercase;
+}
+
+.table {
+  width: 100%;
+  border: 1px dashed #aaaaaa;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table th {
+  color: rgb(153, 0, 0);
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.table td {
+  border: 1px dashed #aaaaaa;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.table tfoot td {
+  text-align: right;
+}
+
+.text-red {
+  color: rgb(148, 3, 3);
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.content {
+  text-align: justify;
+}
+
+.page {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* post style */
+
+.post {
+  width: 900px;
+  height: 400px;
+  padding: 15px 25px;
+  margin: 0 auto 50px;
+  border: 1px solid rgb(180, 180, 180);
+  background: url("../img/grass_sky_light_sunset.jpg") center;
+  background-size: cover;
+}
+
+.post_title {
+  margin: 0 0 20px 0;
+  color: rgb(255, 230, 0);
+}
+
+.post_text {
+  margin: 0 0 10px 0;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+/* gradient style*/
+
+.l-gradient {
+  margin: 0 auto 50px;
+  width: 900px;
+  height: 400px;
+  background-image: linear-gradient(to right, #fff 20%, #333 20%, #333 40%, 
+  #fff 40%, #fff 60%, #333 60%, #333 80%, #fff 80%);
+}
+
+.r-gradient {
+  margin: 0 auto 50px;
+  width: 900px;
+  height: 400px;
+  background-image: radial-gradient(circle, #fff, #333);
+}
