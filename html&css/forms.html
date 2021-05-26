@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Формы</title>
+  </head>
+  <body>
+    <div class="form">
+      <h1 class="title">Форма</h1>
+      <form action="/" method="post">
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <div class="form-group">
+            <label for="input-name">First Name</label>
+            <input id="imput-name" class="form-input" type="text" name="name" />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-input"
+              type="tel"
+              name="tel"
+              placeholder="Phone number"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Пароль</legend>
+          <div class="form-group">
+            <input
+              class="form-input"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <textarea
+            class="form-textarea"
+            name="text"
+            placeholder="About you"
+          ></textarea>
+        </div>
+        <div class="form-select">
+          <select name="city">
+            <option>Riga</option>
+            <option>Moscow</option>
+          </select>
+        </div>
+        <!-- <div class="form-select">
+          <select name="city" multiple>
+            <option>Riga</option>
+            <option>Moscow</option>
+          </select>
+        </div> -->
+        <div class="form-select">
+          <label for="male">Мужской</label>
+          <input type="radio" id="male" name="choose_male" />
+          <label for="female">Женский</label>
+          <input type="radio" id="female" name="choose_male" />
+        </div>
+        <div class="form-group">
+          <label for="photo">Фото</label>
+          <input type="file" name="photo" id="photo" />
+        </div>
+        <div class="form-select">
+          <input type="checkbox" id="rules_agree" />
+          <label for="rules_agree">Прочитал условия и согласен с ними</label>
+        </div>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+        <button type="button">Кнопка</button>
+      </form>
+    </div>
+  </body>
+</html>
