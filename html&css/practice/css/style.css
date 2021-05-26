@@ -20,7 +20,7 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .page {
     max-width: 900px;
   }
