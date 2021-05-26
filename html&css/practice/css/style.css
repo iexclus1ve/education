@@ -8,8 +8,9 @@ body {
 }
 
 .page {
-  width: 800px;
+  max-width: 900px;
   margin: 20px auto;
+  padding: 5px;
   background-color: #ffffff;
   overflow: hidden;
   display: flex;
@@ -19,10 +20,30 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 900px) {
+  .page {
+    max-width: 870px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 667px) {
+  .page {
+    max-width: none;
+  }
+}
+
+
 /* Header */
 .header {
   padding: 20px;
   background-color: #121212;
+  border-radius: 5px;
 }
 
 .header-title {
@@ -59,7 +80,8 @@ body {
 
 /* Images */
 .leaves {
-  background-size: cover;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 /* Content */
