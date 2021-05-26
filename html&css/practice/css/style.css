@@ -8,7 +8,7 @@ body {
 }
 
 .page {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 5px;
   background-color: #ffffff;
@@ -20,9 +20,9 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .page {
-    max-width: 870px;
+    max-width: 900px;
   }
 }
 
