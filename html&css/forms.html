@@ -8,6 +8,7 @@
   <body>
     <div class="form">
       <h1 class="title">Форма</h1>
+      <a href="#" class="link" target="_blank">Ссылка</a>
       <form action="/" method="post">
         <fieldset>
           <legend>Контактная информация</legend>
@@ -43,25 +44,22 @@
             />
           </div>
         </fieldset>
-        <div class="form-group">
-          <textarea
-            class="form-textarea"
-            name="text"
-            placeholder="About you"
-          ></textarea>
-        </div>
+        <fieldset>
+          <legend>Коментарий</legend>
+          <div class="form-group">
+            <textarea
+              class="form-textarea"
+              name="text"
+              placeholder="About you"
+            ></textarea>
+          </div>
+        </fieldset>
         <div class="form-select">
           <select name="city">
             <option>Riga</option>
             <option>Moscow</option>
           </select>
         </div>
-        <!-- <div class="form-select">
-          <select name="city" multiple>
-            <option>Riga</option>
-            <option>Moscow</option>
-          </select>
-        </div> -->
         <div class="form-select">
           <label for="male">Мужской</label>
           <input type="radio" id="male" name="choose_male" />
@@ -76,9 +74,9 @@
           <input type="checkbox" id="rules_agree" />
           <label for="rules_agree">Прочитал условия и согласен с ними</label>
         </div>
-        <button type="submit">Отправить</button>
-        <button type="reset">Очистить</button>
-        <button type="button">Кнопка</button>
+        <button class="btn" type="submit">Отправить</button>
+        <button class="btn" type="reset">Очистить</button>
+        <button class="btn" type="button" disabled>Кнопка</button>
       </form>
     </div>
   </body>

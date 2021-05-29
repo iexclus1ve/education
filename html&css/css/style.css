@@ -124,7 +124,7 @@ ol {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .form-input {
@@ -133,16 +133,76 @@ ol {
   border: 1px solid #000000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  outline: none;
+}
+
+.form-input:focus{
+  background-color: rgb(145, 220, 255);
 }
 
 .form-textarea {
-  width: 200px;
-  height: 150px;
+  width: 90%;
+  height: 300px;
   border: 1px solid #000000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  resize: none;
+  padding: 15px;
+  outline: none;
+}
+
+.form-textarea:focus{
+  background-color: rgb(145, 220, 255);
 }
 
 .form-select {
-  margin-bottom: 15px;
+  margin: 15px;
+}
+
+.link {
+  color: rgb(58, 33, 172);
+  text-decoration: none;
+  display: flex;
+  margin: 18px;
+}
+
+.link:visited {
+  color: rgb(75, 0, 82);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  color: rgb(0, 87, 87);
+}
+
+.btn {
+  background-color: rgb(0, 165, 0);
+  color: #fff;
+  border: 1px solid rgb(0, 71, 0);
+  padding: 5px 10px;
+}
+
+.btn:focus {
+  outline:none
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(0, 71, 0);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: rgb(0, 46, 0);
+}
+
+.btn:disabled {
+  background-color: rgb(126, 126, 126);
+  color: #fff;
+  border: 1px solid rgb(44, 44, 44);
+  padding: 5px 10px;
+  cursor: not-allowed;
 }
