@@ -40,6 +40,7 @@ ol {
   border: 1px dashed #aaaaaa;
   border-collapse: collapse;
   table-layout: fixed;
+  background-color: white;
 }
 
 .table th {
