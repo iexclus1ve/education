@@ -10,7 +10,9 @@ body {
   text-align: center;
   font-weight: 400;
   letter-spacing: 2px;
-  text-decoration: overline;
+  text-decoration-color: rgb(24, 0, 129);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
   text-transform: uppercase;
 }
 
@@ -124,7 +126,7 @@ ol {
 }
 
 .form-group {
-  margin: 15px;
+  margin: 15px 0px;
 }
 
 .form-input {
@@ -141,14 +143,19 @@ ol {
 }
 
 .form-textarea {
-  width: 90%;
+  width: 400px;
   height: 300px;
   border: 1px solid #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; */
+  font: bold italic 15px/1.5  Arial, Helvetica, sans-serif;
   resize: none;
   padding: 15px;
-  outline: none;
+  /* outline: 5px solid red; */
+  outline-width: 5px;
+  outline-color: red;
+  outline-style: dashed;
+  outline-offset: 5px;
 }
 
 .form-textarea:focus{
@@ -205,4 +212,23 @@ ol {
   border: 1px solid rgb(44, 44, 44);
   padding: 5px 10px;
   cursor: not-allowed;
+}
+
+.form-fieldset {
+  padding: 20px;
+  margin: 0 0 20px 0;
+  border: 1px solid rgb(43, 43, 43);
+  /* border-top-width: 2px;
+  border-right-width: 1px;
+  border-bottom-width: 2px;
+  border-left-width: 1px;
+  border-top-style: dotted;
+  border-right-style: groove;
+  border-bottom-style: dashed;
+  border-left-style: solid; */
+}
+
+.form-title {
+  margin: 0 0 15px 0;
+  color: #200053;
 }
