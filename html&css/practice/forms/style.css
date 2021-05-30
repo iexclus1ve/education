@@ -4,7 +4,7 @@ body {
   font-size: 15px;
   color: #121212;
   line-height: 1.5;
-  background-color: rgb(0, 0, 100);
+  background-color: rgb(0, 0, 120);
 }
 
 /* Fomr Group */
@@ -14,6 +14,7 @@ body {
 
 /* Auth */
 .auth {
+  border-radius: 5px;
   width: 260px;
   margin: 20px auto;
   background-color: #fff;
@@ -23,7 +24,7 @@ body {
 .auth-title {
   margin: 0 0 15px 0;
   font-size: 20px;
-  color: rgb(150, 0, 0);
+  color: rgb(0, 0, 120);
   text-align: center;
 }
 
@@ -34,6 +35,7 @@ body {
   width: 238px;
   padding: 8px 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
   font-family: inherit;
   font-size: 15px;
 }
@@ -51,11 +53,36 @@ body {
   width: 260px;
   padding: 8px 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
   font-family: inherit;
   font-size: 15px;
 }
 
 .form-select:focus {
   outline: none;
-  border-color: rgb(0, 0, 100);
+  border: 1px solid rgb(0, 0, 100);
+}
+
+/* Button */
+.btn {
+  display: block;
+  width: 260px;
+  padding: 10px;
+  background-color: rgb(0, 0, 120);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(0, 0, 100);
+}
+
+.btn:active {
+  background-color: rgb(0, 0, 80);
 }
