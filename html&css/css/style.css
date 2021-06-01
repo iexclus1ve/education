@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #333;
@@ -232,4 +233,49 @@ ol {
 .form-title {
   margin: 0 0 15px 0;
   color: #200053;
+}
+
+
+/* Modal */
+.modal {
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  position: relative;
+  background-color: rgb(175, 175, 175);
+}
+
+/* Modal title */
+.modal-title {
+  margin: 0;
+}
+
+/* Square */
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 3;
+}
+
+.square.red {
+  background-color: red;
+  right: -15px;
+  top: -5px;
+  z-index: 2;
+}
+
+.square-fixed {
+  width: 50px;
+  height: 100px;
+  background-color: rgb(66, 21, 190);
+  position: fixed;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -25px;
 }
