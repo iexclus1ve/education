@@ -279,3 +279,42 @@ ol {
   left: 50%;
   margin-left: -25px;
 }
+
+/* Pseudo */
+
+.pseudo-title {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.pseudo-title::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(255, 0, 0);
+  margin: 5px 0 0 -35px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+}
+
+.pseudo-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(0, 119, 255);
+  margin: 5px auto;;
+}
+
+.pseudo-text p::first-letter {
+  /* color: red; */
+  font-size: 25px;
+}
+
+.pseudo-text p::first-line {
+  color: rgb(0, 95, 95);
+}
