@@ -345,3 +345,35 @@ ol {
   text-align: center;
   text-shadow: 1px 1px 2px rgb(194, 194, 194);
 }
+
+
+/* flexbox-page */
+.flexbox-page {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.flexbox-header {
+  padding: 20px;
+  background-color: #eee;
+}
+
+.flexbox-content {
+  display: flex;
+}
+
+.flexbox-sidebar {
+  width: 30%;
+  background-color: #000000;
+  padding: 20px;
+}
+
+.flexbox-main {
+  width: 70%;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.flexbox-footer {
+  background-color: #eee;
+}
