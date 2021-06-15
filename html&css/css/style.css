@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -354,8 +358,30 @@ ol {
 }
 
 .flexbox-header {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 20px;
   background-color: #eee;
+}
+
+.flexbox-header-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.flexbox-header-item-logo {
+  order: 1;
+}
+
+.flexbox-header-item-email {
+  order: 1;
+}
+
+.flexbox-header-item-lang {
+  order: 2;
 }
 
 .flexbox-content {
@@ -363,14 +389,15 @@ ol {
 }
 
 .flexbox-sidebar {
-  width: 30%;
+  flex-basis: 20%;
   background-color: #000000;
   padding: 20px;
   color: #ccc;
 }
 
 .flexbox-main {
-  width: 70%;
+  flex-basis: 60%;
+  text-align: justify;
   background-color: #ccc;
   padding: 20px;
 }
