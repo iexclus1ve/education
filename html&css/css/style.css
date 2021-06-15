@@ -366,6 +366,7 @@ ol {
   width: 30%;
   background-color: #000000;
   padding: 20px;
+  color: #ccc;
 }
 
 .flexbox-main {
@@ -375,5 +376,6 @@ ol {
 }
 
 .flexbox-footer {
+  padding: 20px;
   background-color: #eee;
 }
