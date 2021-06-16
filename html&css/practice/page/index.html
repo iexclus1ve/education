@@ -1,113 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
   <head>
-    <meta name="viewport" content="width=width-device" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Simple Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page">
-      <div class="header">
+      <header class="header">
         <h1 class="header-title">Simple Page</h1>
         <h2 class="header-subtitle">Wellcome</h2>
-      </div>
-      <div class="navigation">
+      </header>
+      <nav class="navigation">
         <a class="nav-link" href="#">Главная</a>
         <a class="nav-link" href="#">Новости</a>
         <a class="nav-link" href="#">Видео</a>
         <a class="nav-link" href="#">Об авторе</a>
-      </div>
+      </nav>
       <img class="leaves" src="img/drops_leaves.jpg" alt="summer_leaves" />
-      <div class="content">
-        <h3 class="content-title">Об авторе</h3>
-        <div class="content-text">
-          <p>
-            Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
-            используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-            время некий безымянный печатник создал большую коллекцию размеров и
-            форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem
-            Ipsum не только успешно пережил без заметных изменений пять веков,
-            но и перешагнул в электронный дизайн. Его популяризации в новое
-            время послужили публикация листов Letraset с образцами Lorem Ipsum в
-            60-х годах и, в более недавнее время, программы электронной вёрстки
-            типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <a class="read-more" href="#">Читать полностью...</a>
-        </div>
-        <h3 class="content-title">Новости</h3>
-        <div class="article">
-          <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
-          <div class="article-date">24-05-2021</div>
-          <div class="article-text">
+      <div class="conteiner">
+        <main class="content">
+          <h3 class="content-title">Об авторе</h3>
+          <article class="content-text">
             <p>
               Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
               используемый в печати и вэб-дизайне. Lorem Ipsum является
               стандартной "рыбой" для текстов на латинице с начала XVI века. В
               то время некий безымянный печатник создал большую коллекцию
               размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-              образцов.
+              образцов. Lorem Ipsum не только успешно пережил без заметных
+              изменений пять веков, но и перешагнул в электронный дизайн. Его
+              популяризации в новое время послужили публикация листов Letraset с
+              образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+              программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+              которых используется Lorem Ipsum.
             </p>
-            <p>
-              Lorem Ipsum не только успешно пережил без заметных изменений пять
-              веков, но и перешагнул в электронный дизайн. Его популяризации в
-              новое время послужили публикация листов Letraset с образцами Lorem
-              Ipsum в 60-х годах и, в более недавнее время, программы
-              электронной вёрстки типа Aldus PageMaker, в шаблонах которых
-              используется Lorem Ipsum.
-            </p>
-          </div>
-          <a class="read-more" href="#">Читать полностью...</a>
-        </div>
-        <div class="article">
-          <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
-          <div class="article-date">24-05-2021</div>
-          <div class="article-text">
+            <a class="read-more" href="#">Читать полностью...</a>
+          </article>
+          <h3 class="content-title">Новости</h3>
+          <article class="article">
+            <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
+            <time datetime="24-05-2021" class="article-date">24 Мая</time>
+            <div class="article-text">
+              <p>
+                Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
+                используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века. В
+                то время некий безымянный печатник создал большую коллекцию
+                размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                образцов.
+              </p>
+              <p>
+                Lorem Ipsum не только успешно пережил без заметных изменений
+                пять веков, но и перешагнул в электронный дизайн. Его
+                популяризации в новое время послужили публикация листов Letraset
+                с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+                которых используется Lorem Ipsum.
+              </p>
+            </div>
+            <a class="read-more" href="#">Читать полностью...</a>
+          </article>
+          <article class="article">
+            <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
+            <time datetime="23-05-2021" class="article-date">23 Мая</time>
+            <div class="article-text">
+              <p>
+                Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
+                используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века. В
+                то время некий безымянный печатник создал большую коллекцию
+                размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                образцов.
+              </p>
+              <p>
+                Lorem Ipsum не только успешно пережил без заметных изменений
+                пять веков, но и перешагнул в электронный дизайн. Его
+                популяризации в новое время послужили публикация листов Letraset
+                с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+                которых используется Lorem Ipsum.
+              </p>
+            </div>
+            <a class="read-more" href="#">Читать полностью...</a>
+          </article>
+          <article class="article">
+            <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
+            <time datetime="22-05-2021" class="article-date">22 Мая</time>
+            <div class="article-text">
+              <p>
+                Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
+                используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века. В
+                то время некий безымянный печатник создал большую коллекцию
+                размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                образцов.
+              </p>
+              <p>
+                Lorem Ipsum не только успешно пережил без заметных изменений
+                пять веков, но и перешагнул в электронный дизайн. Его
+                популяризации в новое время послужили публикация листов Letraset
+                с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+                которых используется Lorem Ipsum.
+              </p>
+            </div>
+            <a class="read-more" href="#">Читать полностью...</a>
+          </article>
+        </main>
+        <aside class="sidebar">
+          <h3 class="sidebar-title">Об авторе</h3>
+          <article class="sidebar-text">
             <p>
               Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
               используемый в печати и вэб-дизайне. Lorem Ipsum является
-              стандартной "рыбой" для текстов на латинице с начала XVI века. В
-              то время некий безымянный печатник создал большую коллекцию
-              размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-              образцов.
+              стандартной "рыбой" для текстов на латинице с начала XVI века.
             </p>
-            <p>
-              Lorem Ipsum не только успешно пережил без заметных изменений пять
-              веков, но и перешагнул в электронный дизайн. Его популяризации в
-              новое время послужили публикация листов Letraset с образцами Lorem
-              Ipsum в 60-х годах и, в более недавнее время, программы
-              электронной вёрстки типа Aldus PageMaker, в шаблонах которых
-              используется Lorem Ipsum.
-            </p>
-          </div>
-          <a class="read-more" href="#">Читать полностью...</a>
-        </div>
-        <div class="article">
-          <h4 class="article-title"><a href="#">Заголовок новости</a></h4>
-          <div class="article-date">24-05-2021</div>
-          <div class="article-text">
-            <p>
-              Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто
-              используемый в печати и вэб-дизайне. Lorem Ipsum является
-              стандартной "рыбой" для текстов на латинице с начала XVI века. В
-              то время некий безымянный печатник создал большую коллекцию
-              размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-              образцов.
-            </p>
-            <p>
-              Lorem Ipsum не только успешно пережил без заметных изменений пять
-              веков, но и перешагнул в электронный дизайн. Его популяризации в
-              новое время послужили публикация листов Letraset с образцами Lorem
-              Ipsum в 60-х годах и, в более недавнее время, программы
-              электронной вёрстки типа Aldus PageMaker, в шаблонах которых
-              используется Lorem Ipsum.
-            </p>
-          </div>
-          <a class="read-more" href="#">Читать полностью...</a>
-        </div>
+            <a class="read-more" href="#">Читать полностью...</a>
+          </article>
+        </aside>
       </div>
-      <div class="footer">Footer</div>
+      <footer class="footer">Footer</footer>
     </div>
   </body>
 </html>
