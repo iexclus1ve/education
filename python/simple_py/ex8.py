@@ -15,7 +15,7 @@ acme_customer = {'first': 'While', 'middle': 'E', 'last': 'Coyote'}
 print(acme_customer)
 print(type(acme_customer))
 
-acme_customer = dict(first='Wheile', middle='E', last='Coyote')
+acme_customer = dict(first='While', middle='E', last='Coyote')
 print(acme_customer)
 print(type(acme_customer))
 
@@ -79,8 +79,8 @@ print('Groucho' in pythons)
 print(pythons.get('Groucho', 'Not a pythons'))
 
 signals = {
-    'green': 'go', 
-    'yellow': 'go faster', 
+    'green': 'go',
+    'yellow': 'go faster',
     'red': 'smile for camera'
 }
 print(signals.keys())
@@ -133,18 +133,18 @@ signals['red'][1] = 'sweat'
 print(signals)
 print(signals_copy)
 
-a = {1:1, 2:2, 3:3}
-b = {1:1, 2:2, 3:3}
+a = {1: 1, 2: 2, 3: 3}
+b = {1: 1, 2: 2, 3: 3}
 print(a == b)
 a = {1: [1, 2], 2: [1], 3: [1]}
 a = {1: [1, 3], 2: [1], 3: [1]}
 print(a == b)
 
 accusation = {
-        'room': 'ballroom',
-        'weapon': 'lead pipe',
-        'person': 'Col. Mustard'
-        }
+    'room': 'ballroom',
+    'weapon': 'lead pipe',
+    'person': 'Col. Mustard'
+}
 for card in accusation.keys():
     print(card)
 for value in accusation.values():
