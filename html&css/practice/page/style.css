@@ -113,15 +113,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-text {
   text-align: justify;
+  font-size: 12px;
 }
 
 .sidebar-title {
   font-size: 16px;
   color: #fd3b3b;
-}
-
-.sidebar-text {
-  font-size: 12px;
 }
 
 .read-more {
@@ -131,6 +128,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+.sidebar-photo {
+  max-width: 100%;
 }
 
 /* Article */
