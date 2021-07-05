@@ -64,15 +64,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 0 0 0 6px;
   text-decoration: none;
-  color: #121212;
+  color: #333;
   font-size: 16px;
   transition: 0.2s;
-  background-color: #494949;
-  color: #fff; 
+  background-color: #7e80ff;
 }
 
 .nav-link:hover {
-  background-color: #7e80ff;
+  color: #fff;
+  background-color: #000264;
   transition: 0.2s;
 }
 
